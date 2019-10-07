@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"io/ioutil"
 	"github.com/gomarkdown/markdown"
-//	"github.com/gomarkdown/markdown/parser"
 )
 
 type Article struct {

@@ -18,7 +18,7 @@ func loadFile(title string) *Article {
 }
 
 func main() {
-	File := loadFile("DESIGN")
+	File := loadFile("test")
 	md := File.Body
 	html := markdown.ToHTML(md, nil, nil)
 	fmt.Printf("%s\n", html)

@@ -2,13 +2,13 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
 	"github.com/gomarkdown/markdown"
+	"io/ioutil"
 )
 
 type Article struct {
 	Filename string
-	Body []byte
+	Body     []byte
 }
 
 func loadFile(title string) *Article {
@@ -18,9 +18,8 @@ func loadFile(title string) *Article {
 }
 
 func main() {
-	File := loadFile("test")
+	File := loadFile("DESIGN")
 	md := File.Body
 	html := markdown.ToHTML(md, nil, nil)
 	fmt.Printf("%s\n", html)
 }
-
